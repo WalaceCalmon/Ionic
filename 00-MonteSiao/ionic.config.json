@@ -1,0 +1,7 @@
+{
+  "name": "MonteSiao",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
