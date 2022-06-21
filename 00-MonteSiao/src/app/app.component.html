@@ -1,22 +1,20 @@
 <ion-app>
-
-  <ion-menu translucent side="start" menuId="principal" contentId="main" >
+  <ion-menu side="start" menuId="principal" contentId="main">
     <ion-header>
-      <ion-toolbar color="primary">
+      <ion-toolbar>
         <ion-title>Menu</ion-title>
       </ion-toolbar>
     </ion-header>
 
-    <ion-content >
+    <ion-content>
       <ion-list>
-        <ion-menu-toggle class="menu" *ngFor="let menu of rotasMenu | async"
-                           autoHide="false">
-            <ion-item [routerLink]="menu.redirectTo"
-                      detail>
-              <ion-icon [name]="menu.icon" slot="start" color="primary"></ion-icon>
-              {{ menu.name }}
-            </ion-item>
-          </ion-menu-toggle>
+        <ion-menu-toggle class="menu" *ngFor="let menu of rotasMenu | async" autoHide="false">
+        <ion-item [routerLink]="menu.redirectTo"
+                  detail>
+        <ion-icon [name]="menu.icon" slot="start" color="primary"></ion-icon>
+          {{ menu.name }}
+        </ion-item>
+       </ion-menu-toggle>
       </ion-list>
     </ion-content>
   </ion-menu>

@@ -6,32 +6,27 @@
   },
   {
     "icon": "home",
-    "name": "Home",
+    "name": "Teste 1",
     "redirectTo": "/home"
   },
   {
     "icon": "home",
-    "name": "Home",
+    "name": "Teste 2",
     "redirectTo": "/home"
   },
   {
     "icon": "home",
-    "name": "Home",
+    "name": "Teste 3",
     "redirectTo": "/home"
   },
   {
     "icon": "home",
-    "name": "Home",
+    "name": "Teste 4",
     "redirectTo": "/home"
   },
   {
     "icon": "home",
-    "name": "Home",
-    "redirectTo": "/home"
-  },
-  {
-    "icon": "home",
-    "name": "Home",
+    "name": "Teste 5",
     "redirectTo": "/home"
   }
 ]
