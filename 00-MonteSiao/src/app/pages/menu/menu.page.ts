@@ -11,15 +11,15 @@ import { RotasMenu } from '../../interface/interface_rotas';
 })
 export class MenuPage implements OnInit {
 
-  rotasMenu: Observable<RotasMenu[]>;
+
 
   constructor(
-    private menuController: MenuController,
-    private dataServiceLocalService: DataServiceLocalService
+    private menuController: MenuController
+
   ) { }
 
   ngOnInit() {
-    this.rotasMenu = this.dataServiceLocalService.getRotasMenu();
+
   }
 
   mostrarMenu(){

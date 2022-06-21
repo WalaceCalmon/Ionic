@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { MenuController } from '@ionic/angular';
+import { Observable } from 'rxjs';
+
+import { RotasMenu } from './interface/interface_rotas';
+import { DataServiceLocalService } from './services/data-service-local.service';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +11,19 @@ import { MenuController } from '@ionic/angular';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor(private menuController: MenuController) { }
+
+  rotasMenu: Observable<RotasMenu[]>;
+
+  constructor(
+    private menuController: MenuController,
+    private dataServiceLocalService: DataServiceLocalService
+    ) {
+      this.iniciarApp();
+    }
+
+  iniciarApp(){
+    this.rotasMenu = this.dataServiceLocalService.getRotasMenu();
+  }
 
   openFirst() {
     this.menuController.enable(true, 'principal');

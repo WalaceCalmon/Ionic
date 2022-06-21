@@ -6,9 +6,17 @@
         <ion-title>Menu</ion-title>
       </ion-toolbar>
     </ion-header>
+
     <ion-content>
       <ion-list>
-
+        <ion-menu-toggle *ngFor="let menu of rotasMenu | async"
+                           autoHide="false">
+            <ion-item [routerLink]="menu.redirectTo"
+                      detail>
+              <ion-icon [name]="menu.icon" slot="start" color="primary"></ion-icon>
+              {{ menu.name }}
+            </ion-item>
+          </ion-menu-toggle>
       </ion-list>
     </ion-content>
   </ion-menu>
