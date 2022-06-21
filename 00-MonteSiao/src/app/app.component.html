@@ -1,15 +1,15 @@
 <ion-app>
 
-  <ion-menu side="start" menuId="principal" contentId="main">
+  <ion-menu translucent side="start" menuId="principal" contentId="main" >
     <ion-header>
       <ion-toolbar color="primary">
         <ion-title>Menu</ion-title>
       </ion-toolbar>
     </ion-header>
 
-    <ion-content>
+    <ion-content >
       <ion-list>
-        <ion-menu-toggle *ngFor="let menu of rotasMenu | async"
+        <ion-menu-toggle class="menu" *ngFor="let menu of rotasMenu | async"
                            autoHide="false">
             <ion-item [routerLink]="menu.redirectTo"
                       detail>

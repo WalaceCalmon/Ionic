@@ -1,7 +1,37 @@
 [
   {
     "icon": "home",
-    "name": "Menu",
+    "name": "Home",
+    "redirectTo": "/home"
+  },
+  {
+    "icon": "home",
+    "name": "Home",
+    "redirectTo": "/home"
+  },
+  {
+    "icon": "home",
+    "name": "Home",
+    "redirectTo": "/home"
+  },
+  {
+    "icon": "home",
+    "name": "Home",
+    "redirectTo": "/home"
+  },
+  {
+    "icon": "home",
+    "name": "Home",
+    "redirectTo": "/home"
+  },
+  {
+    "icon": "home",
+    "name": "Home",
+    "redirectTo": "/home"
+  },
+  {
+    "icon": "home",
+    "name": "Home",
     "redirectTo": "/home"
   }
 ]
