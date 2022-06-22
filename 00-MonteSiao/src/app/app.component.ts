@@ -25,12 +25,4 @@ export class AppComponent {
     this.rotasMenu = this.dataServiceLocalService.getRotasMenu();
   }
 
-  openFirst() {
-    this.menuController.enable(true, 'principal');
-    this.menuController.open('principal');
-  }
-
-  openEnd() {
-    this.menuController.open('end');
-  }
 }

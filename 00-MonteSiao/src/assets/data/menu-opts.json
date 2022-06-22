@@ -5,28 +5,8 @@
     "redirectTo": "/home"
   },
   {
-    "icon": "home",
+    "icon": "american-football",
     "name": "Teste 1",
-    "redirectTo": "/home"
-  },
-  {
-    "icon": "home",
-    "name": "Teste 2",
-    "redirectTo": "/home"
-  },
-  {
-    "icon": "home",
-    "name": "Teste 3",
-    "redirectTo": "/home"
-  },
-  {
-    "icon": "home",
-    "name": "Teste 4",
-    "redirectTo": "/home"
-  },
-  {
-    "icon": "home",
-    "name": "Teste 5",
-    "redirectTo": "/home"
+    "redirectTo": "/menu"
   }
 ]

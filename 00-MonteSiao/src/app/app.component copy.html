@@ -1,5 +1,5 @@
 <ion-app>
-  <ion-menu side="start" menuId="principal" contentId="main" class="burger-menu">
+  <ion-menu side="start" menuId="principal" contentId="main">
     <ion-header>
       <ion-toolbar>
         <ion-title>Menu</ion-title>
@@ -8,7 +8,7 @@
 
     <ion-content>
       <ion-list>
-        <ion-menu-toggle mode="ios" class="menu" *ngFor="let menu of rotasMenu | async" autoHide="false">
+        <ion-menu-toggle class="menu" *ngFor="let menu of rotasMenu | async" autoHide="false">
         <ion-item [routerLink]="menu.redirectTo"
                   detail>
         <ion-icon [name]="menu.icon" slot="start" color="primary"></ion-icon>
